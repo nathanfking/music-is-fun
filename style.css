@@ -1,5 +1,6 @@
- *{outline:1px solid red;}
-video#bgvid { 
+ 
+ @import url(http://fonts.googleapis.com/css?family=Cabin:400);
+ video#bgvid { 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -12,6 +13,30 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    /*background: url(polina.jpg) no-repeat;*/
     background-size: fill; 
+}
+.child{
+  align-items: center;
+}
+.row{
+width: 1920px
+}
+.card{
+	height: 250px;
+  text-align: center;
+  width: fit-content;
+  margin-top:40px;
+  margin-bottom:40px;
+ margin-left:75px;
+  color: rgb(40, 40, 40);
+  font-weight: 700;
+  box-shadow:;
+   -moz-box-shadow:    inset 0 0 40px #000000;
+   -webkit-box-shadow: inset 0 0 40px #000000;
+   box-shadow:         inset 0 0 100px #000000;
+text-shadow: 0px 1px 0px white;
+}
+img{
+  height: 80px
+
 }

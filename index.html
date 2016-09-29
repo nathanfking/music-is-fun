@@ -2,40 +2,36 @@
 
 <head>
     <title>Itunes</title>
+
+
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="search.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 </head>
 
 <body>
-    <div>
+    <div class="flex-container">
         <video playsinline autoplay muted loop poster="" id="bgvid">
-            <source src="/vids/ribbon.mp4" type="video/mp4">
+            <source src="/vids/rabbitHole.mp4" type="video/mp4">
         </video>
-
-        <form class="form-inline">
-            <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-            <div class="form-group">
-                <input type="text" class="form-control" id="artist" placeholder="Artist Name" />
-                <button type="button" class="btn btn-primary" id="get-music-button" onclick="getMusic()">Get Music</button>
-
+        <form class="form-group-workshop">
+            <input type="text" class="form-control" id="artist" placeholder="Artist Name" />
+            <button type="button" class="btn btn-primary" id="get-music-button" onclick="getMusic()">Get Music</button>
         </form>
-        <div id="tunage" class="fluid">
-            <div class="track">
-                <div class="img-container">
-                    <img id="albumArt" src="" alt="" />
-                </div>
-                <div class="text-container">
-                    <h1>title</h1>
-                    <p>artist</p>
-                    <p>collection</p>
-                    <p>price</p>
-                </div>
-            </div>
-        </div>
-        </div>
-        <script src="app.js"></script>
-        <script src="itunes-service.js"></script>
+        <div id="tunage" class="fluid-row">
+            <!--<div class="col-sm-12 col-md-6 col-lg-4 col-lg-push-1 card">
+                <img class="background-image row-fluid span3" id="albumArt" src="" alt="" /></img>
+                <li class="row-fluid">artist</li>
+                <li class="row-fluid">title</li>
+                <li class="row-fluid">collection</li>
+                <li class="row-fluid">price</li>
+                <audio controls style="width=250px" ; " src=" "><a href="preview " class="card-link ">Card link</a></audio>
+           </div>
+       </div>
+    </div>-->
+        <script src="app.js "></script>
+        <script src="itunes-service.js "></script>
 </body>
 
 </html>
