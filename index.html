@@ -13,11 +13,11 @@
 <body>
     <div class="flex-container">
         <video playsinline autoplay muted loop poster="" id="bgvid">
-            <source src="/vids/rabbitHole.mp4" type="video/mp4">
+            <source src="vids/rabbitHole.mp4" type="video/mp4">
         </video>
         <form class="form-group-workshop">
-            <input type="text" class="form-control" id="artist" placeholder="Artist Name" />
-            <button type="button" class="btn btn-primary" id="get-music-button" onclick="getMusic()">Get Music</button>
+            <input type="text" class="form-control" id="artist" placeholder="Artist Name" onkeydown="if (event.keyCode == 13) { getMusic(); return false; }"/>
+           <button type="button" class="btn btn-primary" id="get-music-button" onclick="getMusic()">Get Music</button>
         </form>
         <div id="tunage" class="fluid-row">
             <!--<div class="col-sm-12 col-md-6 col-lg-4 col-lg-push-1 card">
@@ -30,8 +30,8 @@
            </div>
        </div>
     </div>-->
-        <script src="app.js "></script>
-        <script src="itunes-service.js "></script>
+            <script src="app.js "></script>
+            <script src="itunes-service.js "></script>
 </body>
 
 </html>
